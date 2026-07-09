@@ -1,2 +1,26 @@
-# Automated-Wiper-Sensor-System
-A microcontroller-based environmental sensing system that automates car wipers based on rainfall intensity.
+Automated Rain-Sensing Car Wiper System
+
+Project Overview
+This project is a microcontroller-based automation system designed to eliminate manual intervention by dynamically adjusting car wiper speeds based on real-time environmental moisture data. It demonstrates practical competency in sensor integration, automated control logic, and end-to-end engineering simulation.  
+
+Core Automation Workflow
+The system workflow highlights the translation of raw environmental data into automated mechanical action:
+    Data Ingestion: A resistive rain sensor utilizes water's electrical conductivity to measure moisture intensity, sending                      varying analog voltage signals to the central processor.  
+    Algorithmic Processing: An ATmega-family microcontroller continuously polls the Analog-to-Digital Converter (ADC) on pin                             A0. The embedded C++ logic evaluates this data against predefined moisture thresholds.  
+    Dynamic Actuation: Upon detecting rain, the system bypasses manual controls and generates automated Pulse Width                                 Modulation (PWM) signals via digital pin 9 to drive a servo motor, simulating dynamic wiper action.  
+
+Engineering Toolkit
+This project was developed using a comprehensive software and hardware stack:
+    Hardware: Arduino UNO (ATmega328P), Resistive Rain Sensor Module, Servo Motor (Actuator).  
+    Control Logic: C++ (Arduino IDE) for sensor polling, conditional logic, and PWM generation.
+    System Simulation: Proteus was utilized to engineer and simulate the complete hardware schematic and software logic                             prior to physical deployment.
+    Hardware Design: EasyEDA was used to map the initial breadboard prototype into a formal 2D printed circuit board layout.  
+
+Repository Structure
+    /code: Contains the main .ino C++ scripts governing the automation logic.
+    /Docs: Includes the project overview presentation and detailed component theory documentation.
+    /Schematics: Features the block diagrams, hand-drawn circuit concepts, and the final EasyEDA PCB routing layout.
+    /Simulation: Visual proof and captures of the system operating successfully within the Proteus simulation environment.
+    
+    Author
+    Kimathi Mark Collins Maina
